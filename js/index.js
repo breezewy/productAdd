@@ -8,6 +8,9 @@ function sum(m, n) {
 
 // 点击创建按钮，创建3个li，并添加到ul里
 $('.btn .add').on('click',function(){
+    // 点击创建按钮的时候，所有的cover display为none
+    $('.cover').css('display','none');
+    $('li').css('border', '1px solid');
     console.log(1);
     for(var i=0;i<3;i++){
         var num = sum(1, 100); //获取1-100的随机数
